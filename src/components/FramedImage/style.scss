@@ -1,0 +1,38 @@
+.image {
+  border-radius: 100px;
+  width: 40vmax;
+  height: 40vmax;
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &:before {
+    background-color: #fff;
+    transform: scale(0.96);
+    z-index: -1;
+  }
+
+  &:after {
+    border: 6px solid #000;
+    z-index: 1;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.96);
+    width: 100%;
+  }
+}

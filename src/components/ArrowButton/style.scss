@@ -1,0 +1,49 @@
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.2;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+
+  &,
+  .icon {
+    transition: 0.25s ease-out;
+    transition-property: opacity, transition;
+  }
+
+  @keyframes bounce {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+  }
+
+  &.prev {
+    top: 0;
+    transform: rotate(180deg);
+    .icon {
+      animation: bounce infinite 1s;
+    }
+  }
+
+  &.next {
+    bottom: 0;
+    .icon {
+      animation: bounce infinite 1s;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    .icon {
+      animation: none;
+    }
+  }
+}

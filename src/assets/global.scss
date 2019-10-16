@@ -1,0 +1,40 @@
+body {
+  @extend .font-sans;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#svg-defs {
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+.font {
+  &-sans {
+    font-family: 'Work Sans', sans-serif;
+    strong {
+      font-weight: 600;
+    }
+  }
+  &-serif {
+    font-family: 'Roboto Slab', serif;
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+h1 {
+  @extend .font-serif;
+}
