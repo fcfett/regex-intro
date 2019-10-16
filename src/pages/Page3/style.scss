@@ -1,0 +1,33 @@
+#page-3 {
+  ul.timeline {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin: auto 5%;
+
+    &:before {
+      content: '';
+      height: 6px;
+      background-color: #000;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+    }
+
+    li {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      max-width: 200px;
+      text-align: center;
+
+      strong {
+        display: block;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+    }
+  }
+}

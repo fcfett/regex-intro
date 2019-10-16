@@ -4,20 +4,20 @@
   width: 100vw;
   text-align: center;
 
-  ul {
+  & > ul {
     margin: 0;
     padding: 0;
     list-style: none;
 
     &,
-    li {
+    & > li {
       height: 100%;
       overflow: hidden;
       position: absolute;
       width: 100%;
     }
 
-    li {
+    & > li {
       background-color: #e6c319;
       display: flex;
       flex-flow: column nowrap;
@@ -46,7 +46,16 @@
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
+
+        h1 {
+          font-size: 52px;
+          margin: 0;
+        }
+
         & > * {
+          &:not(:only-child) {
+            text-align: left;
+          }
           &:only-child {
             font-size: 8vmax;
             margin: auto;

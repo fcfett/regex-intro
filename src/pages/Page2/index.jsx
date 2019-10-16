@@ -5,9 +5,11 @@ import FramedImage from '../../components/FramedImage';
 
 const Page2 = () => {
   const textToCharSpan = (text) => {
-    let result = [];
-    for (const char of text) {
-      result.push(createElement('span', null, char));
+    const key = text.replace(/[^\w]*/g, '');
+    const result = [];
+    for (const i in text) {
+      const char = text[i];
+      result.push(createElement('span', { key: `${key}-${char}-${i}` }, char));
     }
     return result;
   };

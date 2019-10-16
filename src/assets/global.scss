@@ -38,3 +38,18 @@ code {
 h1 {
   @extend .font-serif;
 }
+
+a {
+  //color: #fff;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+
+  //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  /*
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  */
+}
