@@ -3,7 +3,7 @@ import './style.scss';
 
 import FramedImage from '../../components/FramedImage';
 
-const Page2 = () => {
+export default () => {
   const textToCharSpan = (text) => {
     const key = text.replace(/[^\w]*/g, '');
     const result = [];
@@ -42,5 +42,3 @@ const Page2 = () => {
     </div>
   );
 };
-
-export default Page2;

@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import Icon from '../Icon';
 
-const PageSliderArrow = ({ className, isVisible = true, ...props }) => {
+export default ({ className, isVisible = true, ...props }) => {
   return (
     isVisible && (
       <button className={`arrow ${className}`} {...props}>
@@ -11,5 +11,3 @@ const PageSliderArrow = ({ className, isVisible = true, ...props }) => {
     )
   );
 };
-
-export default PageSliderArrow;

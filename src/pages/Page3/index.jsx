@@ -7,7 +7,7 @@ import stefanini from '../../assets/images/stefanini.jpg';
 import grupols from '../../assets/images/grupols.jpg';
 import vg8 from '../../assets/images/vg8.jpg';
 
-const Page3 = () => (
+export default () => (
   <div id="page-3" className="page">
     <h1>Experience</h1>
     <ul className="timeline">
@@ -42,5 +42,3 @@ const Page3 = () => (
     </ul>
   </div>
 );
-
-export default Page3;
