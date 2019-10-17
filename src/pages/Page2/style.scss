@@ -91,11 +91,11 @@
     bottom: -10px;
     position: absolute;
     @extend .transition;
-    transition: all 0.4s cubic-bezier(1, -0.3, 0.03, 1.4);
+    transition: all 0.55s cubic-bezier(1, -0.3, 0.03, 1.4);
 
     &.left {
       left: -10px;
-      transform: translatex(-120%) rotate(-180deg);
+      transform: translatex(-150%) rotate(-180deg);
       img {
         object-position: -4px 0;
       }
@@ -103,7 +103,7 @@
 
     &.right {
       right: -10px;
-      transform: translatex(120%) rotate(180deg);
+      transform: translatex(150%) rotate(180deg);
     }
   }
 }
