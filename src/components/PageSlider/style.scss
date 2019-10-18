@@ -47,9 +47,177 @@
         display: flex;
         flex-flow: column nowrap;
 
+        &.full {
+          img {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+          }
+        }
+
+        &.blur > *:not(.modal) {
+          transition: filter 0.25s ease-out 0.25s;
+          filter: blur(4px);
+        }
+
         h1 {
           font-size: 52px;
           margin: 0;
+        }
+
+        h2.txt-big {
+          font-size: 6vmax;
+          margin: 0.2em;
+        }
+
+        button {
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-size: inherit;
+          font-weight: 700;
+          padding: 0 0 6px;
+          position: relative;
+
+          &:after {
+            background-color: #000;
+            bottom: 0;
+            border-radius: 3px;
+            content: '';
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            transition: width 0.25s ease-out;
+            width: 0;
+          }
+
+          &:focus,
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+
+        ul.list {
+          flex: 1 0 auto;
+          display: flex;
+          flex-flow: column nowrap;
+          list-style: none;
+          margin: auto 0;
+          padding: 20px 0;
+
+          li {
+            font-size: 22px;
+            margin: auto 0;
+            position: relative;
+
+            &:not(:only-of-type):before {
+              content: '●';
+              display: inline-block;
+
+              margin-right: 10px;
+              position: relative;
+              top: -0.05em;
+            }
+
+            &:only-of-type {
+              text-align: center;
+            }
+          }
+        }
+
+        ul.pictures {
+          align-items: center;
+          display: flex;
+          flex: 1;
+          flex-flow: row wrap;
+          justify-content: center;
+          max-height: 100%;
+          padding: 0;
+
+          li {
+            background: #fff;
+            box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.4);
+            border-radius: 4px;
+            max-height: 100%;
+            padding: 10px;
+
+            &,
+            figure {
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: stretch;
+              position: relative;
+            }
+
+            figure {
+              flex: 1;
+              margin: 0;
+              max-height: 100%;
+              figcaption {
+                background: #fff;
+                display: block;
+                flex: 1 0 auto;
+                font-family: 'Gochi Hand', sans-serif;
+                font-size: 22px;
+                line-height: 0.9em;
+                padding: 6px 0 0;
+                text-align: center;
+              }
+            }
+
+            img {
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: cover;
+              display: block;
+            }
+
+            &:not(:only-of-type) {
+              max-width: 44vmin;
+              &.wide {
+                max-width: 60vmin;
+              }
+              img {
+                max-height: 42vmin;
+              }
+            }
+
+            &:nth-of-type(1) {
+              transform: rotate(-5deg) scale(0.93);
+              &.fun {
+                transform: rotate(-3deg) scale(1.1) translate(-10px, 4px);
+                z-index: 2;
+              }
+            }
+
+            &:nth-of-type(2) {
+              transform: rotate(3deg) scale(0.9);
+            }
+
+            &:nth-of-type(3) {
+              transform: rotate(-3deg) scale(0.95);
+              z-index: 1;
+            }
+
+            &:nth-of-type(4) {
+              transform: rotate(6deg) scale(0.98);
+            }
+
+            &:nth-of-type(5) {
+              transform: rotate(-4deg) scale(0.94);
+            }
+
+            &:only-of-type {
+              overflow: hidden;
+              transform: rotate(1deg) scale(0.93);
+            }
+          }
         }
 
         & > * {

@@ -23,12 +23,13 @@
     opacity: 0.85;
     position: absolute;
     width: 100%;
-    z-index: 0;
   }
 
   .content {
+    align-items: center;
+    display: flex;
     height: 100%;
-    max-width: 60%;
+    max-width: 70%;
     max-height: 90%;
   }
 }

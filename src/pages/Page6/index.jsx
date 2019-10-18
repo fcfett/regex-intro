@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './style.scss';
 
 import Modal from '../../components/Modal';
+import Emoji from '../../components/Emoji';
 import music from './music';
 import beer from './beer';
 import memes from './memes';
@@ -26,33 +27,25 @@ export default () => {
         <li>
           <button onClick={() => openModal(music)}>
             <span>Música</span>
-            <span className="emoji" role="img" aria-label="microphone">
-              🎙
-            </span>
+            <Emoji content=" 🎙" label="microphone" />
           </button>
         </li>
         <li>
           <button onClick={() => openModal(beer)}>
             <span>Cerveja</span>
-            <span className="emoji" role="img" aria-label="beer">
-              🍻
-            </span>
+            <Emoji content=" 🍻" label="beer" />
           </button>
         </li>
         <li>
           <button onClick={() => openModal(memes)}>
             <span>Memes</span>
-            <span className="emoji" role="img" aria-label="poop">
-              💩
-            </span>
+            <Emoji content=" 💩" label="poop" />
           </button>
         </li>
         <li>
           <button onClick={() => openModal(love)}>
-            <span>Curtira a Nega Véia</span>
-            <span className="emoji" role="img" aria-label="heart">
-              🖤
-            </span>
+            <span>Curtir com a Cremosa</span>
+            <Emoji content=" 🖤" label="heart" />
           </button>
         </li>
       </ul>

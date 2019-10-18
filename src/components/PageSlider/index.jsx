@@ -12,7 +12,7 @@ export default ({ children }) => {
   const [state, setState] = useState(INITIAL_STATE);
   const updateState = (payload) => setState((state) => ({ ...state, ...payload }));
 
-  const arrChildren = children.length > 1 ? children : [children];
+  const arrChildren = children && children.length > 1 ? children : [children];
   const hasMultipleSlides = arrChildren.length > 1;
   const isFirstSlide = state.current === 0;
   const isLastSlide = state.current + 1 === arrChildren.length;
