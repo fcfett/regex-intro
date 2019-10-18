@@ -22,12 +22,12 @@ export default () => {
       <h1>História</h1>
       <ul className="list">
         <li>
-          Descritas algebricamente na década de 50 pelo matemático <button onClick={() => openModal(thompson)}>Stephen Cole Kleene</button>{' '}
+          Descritas algebricamente na década de 50 pelo matemático <button onClick={() => openModal(kleene)}>Stephen Cole Kleene</button>{' '}
           com base na teoria de linguagens formais (modelagem, descrição e classificação)
         </li>
         <li>
-          Implementadas por <button onClick={() => openModal(kleene)}>Ken Thompson</button> por volta de 1968 na ferramenta de busca (grep)
-          do editor de texto padrão do Unix
+          Implementadas por <button onClick={() => openModal(thompson)}>Ken Thompson</button> por volta de 1968 na ferramenta de busca
+          (grep) do editor de texto padrão do Unix
         </li>
         <li>Foi se espalhando até ser consolidado na década de 80</li>
         <li>Atualmente a forma mais eficiente na busca e substituição de texto</li>
