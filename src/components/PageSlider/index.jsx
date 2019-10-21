@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.scss';
 
 import ArrowButton from '../ArrowButton';
+import useKeyPress from '../../hooks/useKeyPress';
+import useWheel from '../../hooks/useWheel';
 
 const INITIAL_STATE = {
   current: 0,
@@ -18,6 +20,12 @@ export default ({ children }) => {
   const isLastSlide = state.current + 1 === arrChildren.length;
   const showPrevArrow = hasMultipleSlides && !isFirstSlide;
   const showNextArrow = hasMultipleSlides && !isLastSlide;
+
+  const ArrowUpKeyPress = useKeyPress('ArrowUp'); // up arrow
+  const ArrowDownKeyPress = useKeyPress('ArrowDown'); // down arrow
+  const HomeKeyPress = useKeyPress('Home'); // up arrow
+  const EndKeyPress = useKeyPress('End'); // down arrow
+  const onWheel = useWheel();
 
   const handlePrevClick = () => {
     const { current } = state;
@@ -39,6 +47,27 @@ export default ({ children }) => {
       }, 500);
     }
   };
+
+  useEffect(() => {
+    if (ArrowUpKeyPress) handlePrevClick();
+  }, [ArrowUpKeyPress]);
+
+  useEffect(() => {
+    if (ArrowDownKeyPress) handleNextClick();
+  }, [ArrowDownKeyPress]);
+
+  useEffect(() => {
+    if (HomeKeyPress) foldSlider(0);
+  }, [HomeKeyPress]);
+
+  useEffect(() => {
+    if (EndKeyPress) foldSlider(arrChildren.length - 1);
+  }, [EndKeyPress]);
+
+  useEffect(() => {
+    if (onWheel === 'up') handlePrevClick();
+    if (onWheel === 'down') handleNextClick();
+  }, [onWheel]);
 
   const mapSlides = () => {
     return arrChildren.map(renderSlide);
