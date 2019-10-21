@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.scss';
 
 import PageSlider from '../PageSlider';
 import Page1 from '../../pages/Page1';
