@@ -23,7 +23,7 @@ export default () => (
     <li>
       <FramedImage className="default " src={lasier}></FramedImage>
     </li>
-    <li>
+    <li className="wide">
       <FramedImage className="default " src={fogo}></FramedImage>
     </li>
     <li>
