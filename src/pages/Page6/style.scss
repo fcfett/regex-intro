@@ -14,4 +14,10 @@
       margin: auto 0;
     }
   }
+
+  & > .modal a {
+    text-decoration: underline !important;
+    font-weight: 400;
+    color: #157fd4;
+  }
 }

@@ -12,7 +12,15 @@ export default () => (
       <FramedImage className="default " src={festival} caption="Festivais"></FramedImage>
     </li>
     <li className="wide">
-      <FramedImage className="default" src={bqc} caption="Bah, Que Ceva"></FramedImage>
+      <FramedImage
+        className="default"
+        src={bqc}
+        caption={
+          <a href="https://youtube.com/bahqueceva" target="_blank" rel="noopener noreferrer">
+            Bah, Que Ceva
+          </a>
+        }
+      ></FramedImage>
     </li>
     <li>
       <FramedImage className="default" src={craft} caption="Craft"></FramedImage>

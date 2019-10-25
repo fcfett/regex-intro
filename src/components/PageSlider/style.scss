@@ -109,6 +109,7 @@
           flex-flow: column nowrap;
           list-style: none;
           margin: auto 0;
+          max-height: 60vmin;
           padding: 20px 0;
 
           li {
@@ -181,10 +182,10 @@
             &:not(:only-of-type) {
               max-width: 44vmin;
               &.wide {
-                max-width: 60vmin;
+                max-width: 56vmin;
               }
               img {
-                max-height: 42vmin;
+                max-height: 40vmin;
               }
             }
 

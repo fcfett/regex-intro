@@ -14,6 +14,17 @@ export default () => (
     <li className="wide">
       <FramedImage
         className="default"
+        src={band}
+        caption={
+          <a href="https://youtu.be/zNM4x-Oapw0" target="_blank" rel="noopener noreferrer">
+            Banda
+          </a>
+        }
+      ></FramedImage>
+    </li>
+    <li className="wide">
+      <FramedImage
+        className="default"
         src={shows}
         caption={
           <>
@@ -23,9 +34,6 @@ export default () => (
           </>
         }
       ></FramedImage>
-    </li>
-    <li className="wide">
-      <FramedImage className="default" src={band} caption="Banda"></FramedImage>
     </li>
   </ul>
 );
