@@ -24,19 +24,19 @@ export default () => {
         <li>
           <a href="https://linkedin.com/in/fcfett" target="_blank" rel="noopener noreferrer">
             <Icon height={size} width={size} name="linkedin" />
-            <h2>Linkedin</h2>
+            <h2>LinkedIn</h2>
           </a>
         </li>
         <li>
           <a href="https://codepen.io/fcfett/" target="_blank" rel="noopener noreferrer">
             <Icon height={size} width={size} name="codepen" />
-            <h2>Codepen</h2>
+            <h2>CodePen</h2>
           </a>
         </li>
         <li>
           <a href="https://github.com/fcfett" target="_blank" rel="noopener noreferrer">
             <Icon height={size} width={size} name="github" />
-            <h2>Github</h2>
+            <h2>GitHub</h2>
           </a>
         </li>
       </ul>
