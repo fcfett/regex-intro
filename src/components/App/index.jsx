@@ -8,7 +8,7 @@ import Page3 from '../../pages/Page3';
 import Page4 from '../../pages/Page4';
 import Page5 from '../../pages/Page5';
 import Page6 from '../../pages/Page6';
-import Page7 from '../../pages/Page7';
+import Social from '../../pages/Social';
 import Page8 from '../../pages/Page8';
 import Page9 from '../../pages/Page9';
 import Page10 from '../../pages/Page10';
@@ -17,6 +17,7 @@ import Page12 from '../../pages/Page12';
 import Page13 from '../../pages/Page13';
 import Page14 from '../../pages/Page14';
 import Page15 from '../../pages/Page15';
+import Shorthands from '../../pages/Shorthands';
 import Page16 from '../../pages/Page16';
 import Page17 from '../../pages/Page17';
 import Page18 from '../../pages/Page18';
@@ -36,7 +37,7 @@ export default () => {
         <Page4 />
         <Page5 />
         <Page6 />
-        <Page7 />
+        <Social />
         <Page8 />
         <Page9 />
         <Page10 />
@@ -45,12 +46,14 @@ export default () => {
         <Page13 />
         <Page14 />
         <Page15 />
+        <Shorthands />
         <Page16 />
         <Page17 />
         <Page18 />
         <Page19 />
         <Page20 />
         <Page21 />
+        <Social />
       </PageSlider>
     </div>
   );

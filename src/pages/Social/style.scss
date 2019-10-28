@@ -1,9 +1,12 @@
-#page-7 {
+#social {
   ul {
     display: flex;
     margin: auto 0;
     align-items: center;
     justify-content: space-around;
     margin-bottom: auto;
+    li {
+      text-align: center;
+    }
   }
 }

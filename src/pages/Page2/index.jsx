@@ -26,7 +26,7 @@ export default () => {
         </label>
       </h1>
       <h2 id="stack">
-        <span>{textToCharSpan('{Full Stack Developer}')}</span>
+        <span>{textToCharSpan('{ Full Stack Developer }')}</span>
       </h2>
       <FramedImage
         className="left"
