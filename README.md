@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Page
+
+You can check the live page [here](https://fcfett.github.io/regex-intro/)
+
 ## Available Scripts
 
 In the project directory, you can run:
