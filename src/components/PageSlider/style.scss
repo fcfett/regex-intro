@@ -111,6 +111,7 @@
           margin: auto 0;
           max-height: 60vmin;
           padding: 20px 0;
+          overflow: auto;
 
           li {
             font-size: 22px;
@@ -228,6 +229,7 @@
           &:only-child {
             font-size: 8vmax;
             margin: auto;
+            word-break: break-word;
           }
         }
       }

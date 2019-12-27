@@ -1,29 +1,21 @@
 import React from 'react';
-import './style.scss';
 
 import PageSlider from '../PageSlider';
-import Page1 from '../../pages/Page1';
-import Page2 from '../../pages/Page2';
-import Page3 from '../../pages/Page3';
-import Page4 from '../../pages/Page4';
-import Page5 from '../../pages/Page5';
-import Page6 from '../../pages/Page6';
-import Social from '../../pages/Social';
-import Page8 from '../../pages/Page8';
-import Page9 from '../../pages/Page9';
-import Page10 from '../../pages/Page10';
-import Page11 from '../../pages/Page11';
-import Page12 from '../../pages/Page12';
-import Page13 from '../../pages/Page13';
-import Page14 from '../../pages/Page14';
-import Page15 from '../../pages/Page15';
+import Title from '../../pages/Title';
+import About from '../../pages/About';
+import Regexr from '../../pages/Regexr';
+import Quotes from '../../pages/Quotes';
+import Metacharacter from '../../pages/Metacharacter';
+import Flags from '../../pages/Flags';
+import Composing1 from '../../pages/Composing1';
+import Composing2 from '../../pages/Composing2';
 import Shorthands from '../../pages/Shorthands';
-import Page16 from '../../pages/Page16';
-import Page17 from '../../pages/Page17';
-import Page18 from '../../pages/Page18';
-import Page19 from '../../pages/Page19';
-import Page20 from '../../pages/Page20';
-import Page21 from '../../pages/Page21';
+import Groups from '../../pages/Groups';
+import Lookaheads from '../../pages/Lookaheads';
+import HandsOn from '../../pages/HandsOn';
+import Reference from '../../pages/Reference';
+import ThatsAll from '../../pages/ThatsAll';
+//import Social from '../../pages/Social';
 import SvgDefs from '../SvgDefs';
 
 export default () => {
@@ -31,29 +23,21 @@ export default () => {
     <div id="app">
       <SvgDefs />
       <PageSlider>
-        <Page1 />
-        <Page2 />
-        <Page3 />
-        <Page4 />
-        <Page5 />
-        <Page6 />
-        <Social />
-        <Page8 />
-        <Page9 />
-        <Page10 />
-        <Page11 />
-        <Page12 />
-        <Page13 />
-        <Page14 />
-        <Page15 />
+        <Title />
+        <About />
+        <Regexr />
+        <Quotes />
+        <Metacharacter />
+        <Flags />
+        <Composing1 />
+        <Composing2 />
         <Shorthands />
-        <Page16 />
-        <Page17 />
-        <Page18 />
-        <Page19 />
-        <Page20 />
-        <Page21 />
-        <Social />
+        <Groups />
+        <Lookaheads />
+        <HandsOn />
+        <Reference />
+        <ThatsAll />
+        {/* <Social /> */}
       </PageSlider>
     </div>
   );

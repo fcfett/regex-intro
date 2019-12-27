@@ -50,24 +50,24 @@ export default ({ children }) => {
 
   useEffect(() => {
     if (ArrowUpKeyPress) handlePrevClick();
-  }, [ArrowUpKeyPress]);
+  }, [ArrowUpKeyPress]); // eslint-disable-line
 
   useEffect(() => {
     if (ArrowDownKeyPress) handleNextClick();
-  }, [ArrowDownKeyPress]);
+  }, [ArrowDownKeyPress]); // eslint-disable-line
 
   useEffect(() => {
     if (HomeKeyPress) foldSlider(0);
-  }, [HomeKeyPress]);
+  }, [HomeKeyPress]); // eslint-disable-line
 
   useEffect(() => {
     if (EndKeyPress) foldSlider(arrChildren.length - 1);
-  }, [EndKeyPress]);
+  }, [EndKeyPress]); // eslint-disable-line
 
   useEffect(() => {
     if (onWheel === 'up') handlePrevClick();
     if (onWheel === 'down') handleNextClick();
-  }, [onWheel]);
+  }, [onWheel]); // eslint-disable-line
 
   const mapSlides = () => {
     return arrChildren.map(renderSlide);
