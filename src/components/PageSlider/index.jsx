@@ -7,10 +7,10 @@ import useWheel from '../../hooks/useWheel';
 
 const INITIAL_STATE = {
   current: 0,
-  folding: false
+  folding: false,
 };
 
-export default ({ children }) => {
+export default ({ title, children }) => {
   const [state, setState] = useState(INITIAL_STATE);
   const updateState = (payload) => setState((state) => ({ ...state, ...payload }));
 
@@ -85,7 +85,10 @@ export default ({ children }) => {
       <ArrowButton className="next" title="Next Slide" isVisible={showNextArrow} onClick={() => handleNextClick()} />
       <ul>{mapSlides()}</ul>
       <footer className="current-page font-serif">
-        <span>{state.current + 1}</span>/<strong>{arrChildren.length}</strong>
+        <strong>{title}</strong>
+        <div>
+          <span>{state.current + 1}</span>/<strong>{arrChildren.length}</strong>
+        </div>
       </footer>
     </div>
   );

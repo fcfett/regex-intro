@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
   <div id="page-15" className="page">
-    <h1>Composing</h1>
+    <h1>Compondo</h1>
     <ul className="list">
       <li>
         Com possíveis variações: <strong>[abc]</strong>

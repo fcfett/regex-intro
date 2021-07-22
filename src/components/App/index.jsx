@@ -17,25 +17,29 @@ import Reference from '../../pages/Reference';
 import ThatsAll from '../../pages/ThatsAll';
 //import Social from '../../pages/Social';
 import SvgDefs from '../SvgDefs';
+import Anathomy from '../../pages/Anathomy';
+import Alphanumeric from '../../pages/Alphanumeric';
 
 export default () => {
   return (
     <div id="app">
       <SvgDefs />
-      <PageSlider>
+      <PageSlider title="/RegExp?/i">
         <Title />
         <About />
-        <Regexr />
-        <Quotes />
-        <Metacharacter />
+        <Anathomy />
         <Flags />
+        <Alphanumeric />
+        <Metacharacter />
+        <Quotes />
+        <Regexr />
         <Composing1 />
         <Composing2 />
         <Shorthands />
         <Groups />
         <Lookaheads />
-        <HandsOn />
         <Reference />
+        <HandsOn />
         <ThatsAll />
         {/* <Social /> */}
       </PageSlider>

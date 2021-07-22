@@ -23,8 +23,10 @@
       flex-flow: column nowrap;
       justify-content: center;
       padding: 40px 20px;
-      transition: transform 0.25s ease-out;
+      transition: 0.25s ease-out;
+      transition-property: transform, opacity;
       z-index: 0;
+      opacity: 0;
 
       &:not(.current) {
         transform: translateY(-100%);
@@ -34,6 +36,7 @@
       &.current {
         transform: translateY(0);
         z-index: 1;
+        opacity: 1;
 
         & + li {
           transform: translateY(100%);
@@ -107,6 +110,7 @@
           flex: 1 0 auto;
           display: flex;
           flex-flow: column nowrap;
+          justify-content: center;
           list-style: none;
           margin: auto 0;
           max-height: 60vmin;
@@ -115,7 +119,7 @@
 
           li {
             font-size: 22px;
-            margin: auto 0;
+            margin: 2rem 0;
             position: relative;
 
             &:not(:only-of-type):before {
@@ -238,8 +242,11 @@
 
   .current-page {
     bottom: 0;
+    left: 0;
     padding: 20px;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     right: 0;
     z-index: 2;
   }
