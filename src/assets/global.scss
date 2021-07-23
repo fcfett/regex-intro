@@ -73,15 +73,27 @@ fieldset {
   border: 1px solid;
   padding: 0.5rem 1rem;
 
+  &:first-of-type {
+    margin-left: 0;
+  }
+
   &:last-of-type {
     margin-right: 0;
   }
 
   legend {
+    display: inline-block;
     font-size: small;
     font-weight: 700;
     letter-spacing: 0.1rem;
+    line-height: 1em;
+    height: 1em;
+    overflow: visible;
     padding: 0 0.5rem;
     text-transform: uppercase;
   }
+}
+
+.-ty {
+  transform: translateY(-50%);
 }

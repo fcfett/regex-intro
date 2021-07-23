@@ -81,8 +81,6 @@ export default ({ title, children }) => {
 
   return (
     <div className="page-slider">
-      <ArrowButton className="prev" title="Previous Slide" isVisible={showPrevArrow} onClick={() => handlePrevClick()} />
-      <ArrowButton className="next" title="Next Slide" isVisible={showNextArrow} onClick={() => handleNextClick()} />
       <ul>{mapSlides()}</ul>
       <footer className="current-page font-serif">
         <strong>{title}</strong>
@@ -90,6 +88,8 @@ export default ({ title, children }) => {
           <span>{state.current + 1}</span>/<strong>{arrChildren.length}</strong>
         </div>
       </footer>
+      <ArrowButton className="prev" title="Previous Slide" isVisible={showPrevArrow} onClick={() => handlePrevClick()} />
+      <ArrowButton className="next" title="Next Slide" isVisible={showNextArrow} onClick={() => handleNextClick()} />
     </div>
   );
 };

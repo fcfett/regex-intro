@@ -1,0 +1,43 @@
+@use '../../assets/global.scss';
+
+.fettip {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-weight: 100;
+  @extend .font-sans;
+  font-size: 0.8em;
+  border-radius: 4px;
+  position: relative;
+  animation: bounce 1.25s ease-out both infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+
+    border-bottom: 0.5em solid black;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
+
+  strong {
+    @extend .font-serif;
+    font-size: 1.2em;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-0.25em);
+    }
+    40% {
+      transform: translateY(0.25em);
+    }
+  }
+}

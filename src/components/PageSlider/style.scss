@@ -76,7 +76,7 @@
           margin: 0.2em;
         }
 
-        button {
+        button:not(.pill) {
           background: none;
           border: none;
           cursor: pointer;

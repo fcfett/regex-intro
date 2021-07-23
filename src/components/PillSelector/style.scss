@@ -1,0 +1,138 @@
+@use '../../assets/global.scss';
+
+$cyan: #0a7bad;
+$cyan-light: lighten($cyan, 30%);
+$blue: #0953bc;
+$blue-light: lighten($blue, 20%);
+$orange: #d8401f;
+$orange-light: lighten($orange, 15%);
+$red: #8d2410;
+$red-light: lighten($red, 25%);
+
+ul.pills {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  button.pill {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  li {
+    flex: 1 0 auto;
+    margin: 0.5em;
+
+    &:nth-child(odd) {
+      transform: rotate(-5deg);
+    }
+
+    &:nth-child(even) {
+      transform: rotate(5deg);
+    }
+  }
+
+  .pill {
+    cursor: pointer;
+    position: relative;
+    padding: 0.75em 1.25em;
+    box-shadow: 0 1em 0.5em -0.5em rgba(#000, 0.4);
+    overflow: visible;
+    border-radius: 25em;
+    text-align: center;
+    @extend .font-serif;
+    width: 100px;
+    z-index: 1;
+
+    strong {
+      display: inline-block;
+      transition: transform 0.5s 0.25s ease-in;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 52%;
+      height: 100%;
+      top: 0;
+      transition: 0.5s ease-in;
+      transition-property: opacity, transform;
+    }
+
+    &:before {
+      left: 0;
+      border-radius: 25em 0 0 25em;
+    }
+
+    &:after {
+      right: 0;
+      border-radius: 0 25em 25em 0;
+      box-shadow: -2px 0 4px -1px rgba(#000, 0.2);
+    }
+
+    &.blue {
+      &:before {
+        background: linear-gradient(180deg, $cyan-light, $cyan);
+      }
+      &:after {
+        background: linear-gradient(180deg, $blue-light, $blue);
+      }
+    }
+
+    &.red {
+      &:before {
+        background: linear-gradient(180deg, $orange-light, $orange);
+      }
+      &:after {
+        background: linear-gradient(180deg, $red-light, $red);
+      }
+    }
+
+    &:not(.open) {
+      &:focus,
+      &:hover {
+        animation: pulse 1s ease-in-out infinite both;
+        z-index: 2;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          filter: drop-shadow(0 0 42px #fff);
+        }
+        40%,
+        50% {
+          transform: scale(0.9);
+          filter: none;
+        }
+      }
+    }
+
+    &.open {
+      box-shadow: none;
+
+      strong {
+        transform: scale(3);
+      }
+
+      &:before,
+      &:after {
+        opacity: 0;
+      }
+
+      &:before {
+        transform: translate(-100%, 50%) rotate(-90deg);
+      }
+
+      &:after {
+        transform: translate(100%, 50%) rotate(90deg);
+      }
+    }
+  }
+}
