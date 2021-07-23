@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Emoji from '../../components/Emoji';
+
 export default () => (
   <div id="page-15" className="page">
     <h1>Shorthands</h1>
@@ -15,6 +17,9 @@ export default () => (
       </li>
       <li>
         Borda: <strong>\b</strong>
+      </li>
+      <li>
+        Cada um possui seu gêmeo do mal: <strong>\W \D \S \B</strong> <Emoji label="Emoji do cramunhão" content="👹" />
       </li>
     </ul>
   </div>

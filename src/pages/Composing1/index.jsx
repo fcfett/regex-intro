@@ -5,13 +5,13 @@ export default () => (
     <h1>Compondo</h1>
     <ul className="list">
       <li>
-        Algo específico: /<strong>algo</strong>/
-      </li>
-      <li>
-        Pode ser <strong>qualquer coisa</strong>: /<strong>.</strong>/
+        Algo específico: /<strong>algo específico</strong>/
       </li>
       <li>
         Pode ser <strong>opcional</strong>: /<strong>c?</strong>asa/
+      </li>
+      <li>
+        Pode ser <strong>qualquer coisa</strong>: /<strong>.</strong>/
       </li>
       <li>
         A quantidade de vezes que tu quiser: <strong>*</strong>, <strong>+</strong> ou <strong>{'{n, n}'}</strong>
