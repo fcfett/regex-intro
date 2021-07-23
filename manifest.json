@@ -1,5 +1,5 @@
 {
-  "short_name": "/regexp?/",
+  "short_name": "/RegExp?/i",
   "name": "An introduction to Regular Expressions by Felipe Fett",
   "icons": [
     {

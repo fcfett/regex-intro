@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/regex-intro/static/css/main.5b9e43c7.chunk.css",
-    "main.js": "/regex-intro/static/js/main.f8db3e18.chunk.js",
-    "main.js.map": "/regex-intro/static/js/main.f8db3e18.chunk.js.map",
-    "runtime-main.js": "/regex-intro/static/js/runtime-main.1a3bebcc.js",
-    "runtime-main.js.map": "/regex-intro/static/js/runtime-main.1a3bebcc.js.map",
-    "static/js/2.d9e04f76.chunk.js": "/regex-intro/static/js/2.d9e04f76.chunk.js",
-    "static/js/2.d9e04f76.chunk.js.map": "/regex-intro/static/js/2.d9e04f76.chunk.js.map",
+    "main.css": "/regex-intro/static/css/main.fccdbab3.chunk.css",
+    "main.js": "/regex-intro/static/js/main.a5759d97.chunk.js",
+    "main.js.map": "/regex-intro/static/js/main.a5759d97.chunk.js.map",
+    "runtime-main.js": "/regex-intro/static/js/runtime-main.c5c09bd2.js",
+    "runtime-main.js.map": "/regex-intro/static/js/runtime-main.c5c09bd2.js.map",
+    "static/js/2.09088129.chunk.js": "/regex-intro/static/js/2.09088129.chunk.js",
+    "static/js/2.09088129.chunk.js.map": "/regex-intro/static/js/2.09088129.chunk.js.map",
     "index.html": "/regex-intro/index.html",
-    "precache-manifest.0638866ee555355d1843fd1aabb96d2c.js": "/regex-intro/precache-manifest.0638866ee555355d1843fd1aabb96d2c.js",
+    "precache-manifest.e5b4fb9af57d15937b1194bef8a3df60.js": "/regex-intro/precache-manifest.e5b4fb9af57d15937b1194bef8a3df60.js",
     "service-worker.js": "/regex-intro/service-worker.js",
-    "static/css/main.5b9e43c7.chunk.css.map": "/regex-intro/static/css/main.5b9e43c7.chunk.css.map",
-    "static/js/2.d9e04f76.chunk.js.LICENSE": "/regex-intro/static/js/2.d9e04f76.chunk.js.LICENSE",
+    "static/css/main.fccdbab3.chunk.css.map": "/regex-intro/static/css/main.fccdbab3.chunk.css.map",
+    "static/js/2.09088129.chunk.js.LICENSE.txt": "/regex-intro/static/js/2.09088129.chunk.js.LICENSE.txt",
     "static/media/angle-down.56c8ef7f.svg": "/regex-intro/static/media/angle-down.56c8ef7f.svg",
     "static/media/codepen.d7049c6c.svg": "/regex-intro/static/media/codepen.d7049c6c.svg",
     "static/media/facebook.6cad3fe6.svg": "/regex-intro/static/media/facebook.6cad3fe6.svg",
@@ -23,9 +23,9 @@
     "static/media/thompson.jpg": "/regex-intro/static/media/thompson.436befe8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1a3bebcc.js",
-    "static/js/2.d9e04f76.chunk.js",
-    "static/css/main.5b9e43c7.chunk.css",
-    "static/js/main.f8db3e18.chunk.js"
+    "static/js/runtime-main.c5c09bd2.js",
+    "static/js/2.09088129.chunk.js",
+    "static/css/main.fccdbab3.chunk.css",
+    "static/js/main.a5759d97.chunk.js"
   ]
 }
