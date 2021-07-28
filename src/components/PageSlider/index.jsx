@@ -83,7 +83,7 @@ export default ({ title, children }) => {
     <div className="page-slider">
       <ul>{mapSlides()}</ul>
       <footer className="current-page font-serif">
-        <strong>{title}</strong>
+        {title ? <strong>{title}</strong> : null}
         <div>
           <span>{state.current + 1}</span>/<strong>{arrChildren.length}</strong>
         </div>

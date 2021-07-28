@@ -5,7 +5,7 @@ import Shout from '../../components/Shout';
 export default () => (
   <div id="page-12" className="page">
     <h1>
-      Melhor referência <Shout>Ever</Shout>!!!
+      Melhor referência <Shout>Ever</Shout>
     </h1>
     <ul className="list">
       <li>

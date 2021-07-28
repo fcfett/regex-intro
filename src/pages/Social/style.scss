@@ -1,12 +1,35 @@
 #social {
-  ul {
-    display: flex;
-    margin: auto 0;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: auto;
+  ul.flex {
+    flex-flow: row wrap;
+    padding: 0 8vmin;
+    gap: 8vmin;
+
     li {
-      text-align: center;
+      &:before {
+        content: none;
+      }
+
+      flex: 1;
+
+      &.qrcode {
+        max-width: 40vmin;
+      }
+    }
+
+    @media (max-width: 960px) {
+      flex-flow: column nowrap;
+      gap: unset;
+
+      li {
+        flex: 0 1 auto;
+        margin: 0;
+        text-align: center;
+
+        &.qrcode {
+          order: -1;
+          width: 50%;
+        }
+      }
     }
   }
 }

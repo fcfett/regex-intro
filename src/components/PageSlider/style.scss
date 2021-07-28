@@ -31,6 +31,13 @@
       &:not(.current) {
         transform: translateY(-100%);
         transition-delay: 0.25s;
+        animation: remove-focus 0.25s forwards 0.25s;
+
+        @keyframes remove-focus {
+          to {
+            visibility: hidden;
+          }
+        }
       }
 
       &.current {
@@ -73,7 +80,7 @@
 
         h2.txt-big {
           font-size: 6vmax;
-          margin: 0.2em;
+          margin: 0.2em 0;
         }
 
         button:not(.pill) {
@@ -139,8 +146,7 @@
         ul.pictures {
           align-items: center;
           display: flex;
-          flex: 1;
-          flex-flow: row wrap;
+          flex-wrap: wrap;
           justify-content: center;
           max-height: 100%;
           padding: 0;
@@ -150,7 +156,12 @@
             box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.4);
             border-radius: 4px;
             max-height: 100%;
-            padding: 10px;
+            padding: 1.6vmin;
+            flex: 1 0 33%;
+
+            @media (max-width: 560px) {
+              flex: 1 0 50%;
+            }
 
             &,
             figure {
@@ -195,10 +206,6 @@
 
             &:nth-of-type(1) {
               transform: rotate(-5deg) scale(0.93);
-              &.fun {
-                transform: rotate(-3deg) scale(1.1) translate(-10px, 4px);
-                z-index: 2;
-              }
             }
 
             &:nth-of-type(2) {

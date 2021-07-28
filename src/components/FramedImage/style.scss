@@ -1,10 +1,14 @@
 .image {
+  &:not(.visible) {
+    opacity: 0;
+  }
+
   &:not(.default) {
     border-radius: 100px;
-    width: 40vmax;
-    height: 40vmax;
-    max-width: 200px;
-    max-height: 200px;
+    width: 25vmin;
+    height: 25vmin;
+    max-width: 180px;
+    max-height: 180px;
     overflow: hidden;
     position: relative;
 
@@ -26,7 +30,7 @@
     }
 
     &:after {
-      border: 6px solid #000;
+      border: 0.8vmin solid #000;
       z-index: 1;
     }
 

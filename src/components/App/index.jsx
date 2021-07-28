@@ -15,7 +15,7 @@ import Lookaheads from '../../pages/Lookaheads';
 import HandsOn from '../../pages/HandsOn';
 import Reference from '../../pages/Reference';
 import ThatsAll from '../../pages/ThatsAll';
-//import Social from '../../pages/Social';
+import Social from '../../pages/Social';
 import SvgDefs from '../SvgDefs';
 import Anathomy from '../../pages/Anathomy';
 import Alphanumeric from '../../pages/Alphanumeric';
@@ -41,7 +41,7 @@ export default () => {
         <Reference />
         <HandsOn />
         <ThatsAll />
-        {/* <Social /> */}
+        <Social />
       </PageSlider>
     </div>
   );
