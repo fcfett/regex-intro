@@ -1,12 +1,9 @@
-@use '../../assets/global.scss';
-
 .fettip {
   display: inline-block;
   background-color: #000;
   color: #fff;
   padding: 0.5em 1em;
   font-weight: 100;
-  @extend .font-sans;
   font-size: 0.8em;
   border-radius: 4px;
   position: relative;
@@ -27,7 +24,6 @@
   }
 
   strong {
-    @extend .font-serif;
     font-size: 1.2em;
   }
 

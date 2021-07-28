@@ -3,6 +3,6 @@ import './style.scss';
 
 export default ({ children }) => (
   <span className="fettip">
-    <strong>Fettip:</strong> {children}
+    <strong className="font-serif">Fettip:</strong> {children}
   </span>
 );

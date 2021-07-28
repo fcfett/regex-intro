@@ -15,7 +15,7 @@ export default ({ red, blue }) => {
         .filter(([key]) => !selected || selected === key)
         .map(([key, value]) => (
           <li key={key}>
-            <button className={`pill ${key} ${selected === key ? 'open' : ''}`} onClick={() => handlePillClick(key)}>
+            <button className={`pill font-serif ${key} ${selected === key ? 'open' : ''}`} onClick={() => handlePillClick(key)}>
               <strong>{value}</strong>
             </button>
           </li>

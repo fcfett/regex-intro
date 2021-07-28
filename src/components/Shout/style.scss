@@ -1,9 +1,6 @@
-@use '../../assets/global.scss';
-
 .shout {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   margin-left: 0.5em;
-  @extend .font-serif;
 }

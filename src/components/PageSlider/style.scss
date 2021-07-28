@@ -159,10 +159,6 @@
             padding: 1.6vmin;
             flex: 1 0 33%;
 
-            @media (max-width: 560px) {
-              flex: 1 0 50%;
-            }
-
             &,
             figure {
               display: flex;
@@ -255,5 +251,41 @@
     justify-content: space-between;
     right: 0;
     z-index: 2;
+  }
+}
+
+@media (max-width: 680px) {
+  .page-slider > ul > li {
+    .page {
+      h2.txt-big,
+      & > :only-child {
+        font-size: 4vmax;
+      }
+
+      h1 {
+        &,
+        &:only-child {
+          font-size: 5vmax;
+        }
+      }
+
+      ul.list li {
+        font-size: 16px;
+        margin: 0.5em 0;
+
+        fieldset {
+          margin: 0.5rem 0.25rem;
+          padding: 0.25rem;
+        }
+
+        legend {
+          font-size: xx-small;
+        }
+      }
+
+      ul.pictures li {
+        flex: 1 0 50%;
+      }
+    }
   }
 }
